@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./assets/images/bg01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+i {
+  cursor: pointer;
+  user-select: none;
+}
+
+ul {
+  list-style: none;
+}
+.container {
+  width: 360px;
+  border-radius: 15px;
+  position: relative;
+}
+
+
+.shape {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.shape-1 {
+  background: radial-gradient(circle at 35px 65px, #9b22ea, #005);
+  left: -65px;
+  top: -65px;
+}
+.shape-2 {
+  background: radial-gradient(circle at 45px 90px, #875e06, #a89393);
+  right: -65px;
+  bottom: -65px;
+}
+.shape-3 {
+  height: 60px;
+  width: 60px;
+  background: #a89393;
+  right: 7px;
+  top: 10px;
+  filter: blur(20px);
+}
+
+main {
+  width: 360px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(7, 15, 15, 0.5);
+  overflow: hidden;
+  position: relative;
+  backdrop-filter: blur(3px);
+}
